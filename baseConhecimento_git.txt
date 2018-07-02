@@ -6,3 +6,6 @@ Subir arquivo do GUITHUB.
 4. git commit -m "mensagem de commit"
 5. git remote add origin https://github.com/lealcalhau/meat.git
 6. git push -u origin master
+
+==================================
+Atualizar documento 
