@@ -8,4 +8,8 @@ Subir arquivo do GUITHUB.
 6. git push -u origin master
 
 ==================================
-Atualizar documento 
+Atualizar documento
+
+git fetch -> Irá buscar os arquivos no servidor q eu n tenho.
+
+git pull -> Realizará o merge
