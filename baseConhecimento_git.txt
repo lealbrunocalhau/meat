@@ -1,0 +1,8 @@
+Subir arquivo do GUITHUB.
+
+1. Entrar no diretorio CMD
+2. Executar git init
+3. git add .       => (comando que ira adicionar os arquivos q n tem referencia no guit ainda)
+4. git commit -m "mensagem de commit"
+5. git remote add origin https://github.com/lealcalhau/meat.git
+6. git push -u origin master
