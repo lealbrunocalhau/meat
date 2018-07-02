@@ -1,0 +1,29 @@
+<div class="wrapper">
+
+<mt-header></mt-header>
+<!-- OBJETO FIXO EM TODAS A TELAS -->
+
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+    <div class="container" >
+
+        <router-outlet></router-outlet>
+        <!-- Importante -->
+        <!-- Objeto que ira definir qual "selector"{exemplo: <mt-restaurants></mt-restaurants>} SERÁ ABERTO! -->
+        <!-- Essa definição está lançada no arquivo routes, e será processado conforme "click" na tela, onde o link irá implementar um "RouterLink" -->
+
+
+    </div>
+  </div>
+
+  <!-- snakbar deve ser aqui -->
+
+  <footer class="main-footer">
+    <div class="container" >
+      <div class="pull-right hidden-xs">
+        <b>Version</b> 1.0.0
+      </div>
+      <strong>Meat</strong> Angular Application
+    </div>
+  </footer>
+</div>

@@ -1,0 +1,30 @@
+<!-- INíCIO do CONTEÚDO -->
+<section class="content-header">
+  <h1>
+    Todos os Restaurantes
+  </h1>
+</section>
+
+
+<section class="content">
+
+  <div class="row">
+          <div *ngFor="let restaurant0 of restaurants1" class="col-sm-6 col-xs-12">
+            <!-- Essa variavel restaurants1 está implementada em RestaurantsComponent
+                Ela é o array de objetos restaurant-->
+            <!-- <p>
+              {{bruno}}<br />
+              {{restaurants1}}<br />
+              {{restaurant}}<br />
+              {{restaurant.imagePath}}
+            </p> -->
+
+              <mt-restaurant [restaurant]="restaurant0"></mt-restaurant>
+
+          </div>
+
+        </div>
+
+</section>
+
+<!-- FIM  do CONTEÚDO -->
