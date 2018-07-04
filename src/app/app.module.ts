@@ -4,6 +4,10 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 
+//modulo de animacao
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+
+
 import {ROUTES} from './app.routes';
 
 import { AppComponent } from './app.component';
@@ -22,6 +26,9 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import {SharedModule} from './shared/shared.module'
 //import {CoreModule} from './core/core.module'
+
+
+
 
 @NgModule({
   declarations: [
@@ -42,6 +49,7 @@ import {SharedModule} from './shared/shared.module'
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpModule,
     SharedModule.forRoot(),
     RouterModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules})
