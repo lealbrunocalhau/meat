@@ -24,7 +24,8 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 // import {ShoppingCartService} from './restaurant-detail/shopping-cart/shopping-cart.service';
 // import { OrderService } from './order/order.service';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
-import {SharedModule} from './shared/shared.module'
+import {SharedModule} from './shared/shared.module';
+import { NotFoundComponent } from './not-found/not-found.component'
 //import {CoreModule} from './core/core.module'
 
 
@@ -45,7 +46,8 @@ import {SharedModule} from './shared/shared.module'
     // OrderComponent,
     // OrderItemsComponent,
     // DeliveryCostsComponent,
-    OrderSummaryComponent
+    OrderSummaryComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
