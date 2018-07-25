@@ -7,8 +7,8 @@ import {FormBuilder, FormControl, FormGroup} from '@angular/forms'
 import { Restaurant } from './restaurant/restaurant.model';
 import { RestaurantsService} from './restaurants.service';
 
-import 'rxjs/add/operator/switchMap'
 import 'rxjs/add/operator/do'
+import 'rxjs/add/operator/switchMap'
 import 'rxjs/add/operator/debounceTime'
 import 'rxjs/add/operator/distinctUntilChanged'
 
