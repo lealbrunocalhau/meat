@@ -22,3 +22,8 @@ git clone https://github.com/lealcalhau/meat.git
 cd meat
 npm install
 npm audit fix
+
+
+==============================
+nodemon --watch backend backend/dist/server.js
+npm i nodemon -g
