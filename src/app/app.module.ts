@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID} from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 
@@ -25,7 +25,8 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 // import { OrderService } from './order/order.service';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import {SharedModule} from './shared/shared.module';
-import { NotFoundComponent } from './not-found/not-found.component'
+import { NotFoundComponent } from './not-found/not-found.component';
+import { LoginComponent } from './security/login/login.component'
 //import {CoreModule} from './core/core.module'
 
 
@@ -47,12 +48,13 @@ import { NotFoundComponent } from './not-found/not-found.component'
     // OrderItemsComponent,
     // DeliveryCostsComponent,
     OrderSummaryComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpModule,
+    HttpClientModule,
     SharedModule.forRoot(),
     RouterModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules})
   ],
