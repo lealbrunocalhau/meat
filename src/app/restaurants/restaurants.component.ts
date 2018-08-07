@@ -16,7 +16,7 @@ import 'rxjs/add/operator/distinctUntilChanged'
   selector: 'mt-restaurants',
   templateUrl: './restaurants.component.html',
   animations: [
-    trigger('toggleSearch', [
+    trigger('toggleSearch1', [
       state('hidden', style({
         opacity: 0,
         "max-height": "0px",
@@ -40,7 +40,7 @@ export class RestaurantsComponent implements OnInit {
   searchForm: FormGroup
   searchControl: FormControl
 
-  bruno: string = 'testando'
+
   constructor(private restaurantsService: RestaurantsService,
               private fb: FormBuilder) { }
 
@@ -65,5 +65,7 @@ export class RestaurantsComponent implements OnInit {
   toggleSearch(){
     this.searchBarState = this.searchBarState === 'hidden' ? 'visible' : 'hidden'
   }
+
+
 
 }

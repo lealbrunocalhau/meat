@@ -8,7 +8,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 
-import {ROUTES} from './app.routes';
+import {ROUTES2} from './app.routes';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -26,7 +26,8 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import {SharedModule} from './shared/shared.module';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { LoginComponent } from './security/login/login.component'
+import { LoginComponent } from './security/login/login.component';
+import { UserDetailComponent } from './header/user-detail/user-detail.component'
 //import {CoreModule} from './core/core.module'
 
 
@@ -49,14 +50,15 @@ import { LoginComponent } from './security/login/login.component'
     // DeliveryCostsComponent,
     OrderSummaryComponent,
     NotFoundComponent,
-    LoginComponent
+    LoginComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     SharedModule.forRoot(),
-    RouterModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules})
+    RouterModule.forRoot(ROUTES2, {preloadingStrategy: PreloadAllModules})
   ],
   providers: [{provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
