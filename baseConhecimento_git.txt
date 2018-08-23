@@ -27,3 +27,47 @@ npm audit fix
 ==============================
 nodemon --watch backend backend/dist/server.js
 npm i nodemon -g
+
+
+
+
+
+====================================Instalar VM=============================
+Instalação Ambiente
+
+1.Windows 10
+2. Office 2016
+3. Winrar
+4. Vagrant
+5. VirtualBox
+6. Putty - Pendente
+7. GuitBash
+
+
+
+Ambiente Desenvolvimento
+vagrant up...
+1. Instalar Linux.
+	1.PHP
+	2.Mysql
+	3.PostGres
+	4.Ngix
+
+2. Conectar no linux e instalar os restante
+	1. Executar script ./install.sh na pasta suporte/installation
+	2. Executar script ./update.sh na pasta suporte/update
+	3. Verificar arquivo /etc/ngix/sites-availble/default (vagrant/public)
+	3. Instalar Composer
+		- Como instala?
+		- Rodar compando no linux:curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+			-Ir na pasta /vagrant e realizar o comando "composer update"
+	4.Instalar Phinx
+		1. Será necesserio rodar o compando para instalar o Phinx
+			1. Pode dar erro, por falta do MBSTRING
+				-sudo apt-get install php7.0-mbstring
+		2. Criar o banco de Dados test, configurado no arquivo phinx
+		3. rodar o comando "vendor/bin/phinx migrate" -> diretorio /vagrant/
+Atom
+1. Instalar Pacotes
+	1.html close tags
+	2.autoclomplete
