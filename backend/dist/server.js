@@ -8,6 +8,9 @@ var authz_1 = require("./authz");
 var server = jsonServer.create();
 var router = jsonServer.router('db.json');
 var middlewares = jsonServer.defaults();
+
+var port = "3001";
+var host = "0.0.0.0";
 // Set default middlewares (logger, static, cors and no-cache)
 server.use(middlewares);
 // To handle POST, PUT and PATCH you need to use a body-parser
@@ -22,6 +25,6 @@ var options = {
     cert: fs.readFileSync('./backend/keys/cert.pem'),
     key: fs.readFileSync('./backend/keys/key.pem')
 };
-https.createServer(options, server).listen(3001, function () {
+https.createServer(options, server).listen(port,host, function () {
     console.log('JSON Server is running on https://localhost:3001');
 });

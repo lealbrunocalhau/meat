@@ -11,6 +11,8 @@ const server: Express = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 
+const PORT = "3001"
+const HOST = "0.0.0.0"
 
 // Set default middlewares (logger, static, cors and no-cache)
 server.use(middlewares)
@@ -31,6 +33,6 @@ const options = {
   key: fs.readFileSync('./backend/keys/key.pem')
 }
 
-https.createServer(options, server).listen(3001, () => {
+https.createServer(options, server).listen(PORT,HOST, () => {
   console.log('JSON Server is running on https://localhost:3001')
 })
