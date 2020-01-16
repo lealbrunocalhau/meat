@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+    meatfrontend1:
+        build: ./frontend/angulardocker
+        command: bash -c "npm install && npm start"
+        container_name: meat_frontend_container
+        working_dir: /app
+        volumes:
+            - ./frontend:/app
+        ports:
+            - "4230:4230"
+
+    meatbackend1:
+        build: ./backend/backenddocker
+        command: bash -c "npm install && npm start"
+        container_name: meat_backend_container
+        working_dir: /app
+        volumes:
+            - ./backend:/app        
+        ports:
+            - "3001:3001"

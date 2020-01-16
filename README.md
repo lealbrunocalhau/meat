@@ -1,28 +1,24 @@
 # Meat - Angular App Starter
 
-Aplicação em Angular 6
-Para iniciar a aplicação, precisamos subir um servidor em backend.
+Aplicação em Angular 6 desenvolvida no Curso da Cod3rBr pela Udemy.
 
-Comando:
-  node backend/dist/server
 
-Posteriormente podemos iniciar o servidor Angular
+# Iniciar projeto
 
-Comando:
-  ng serve
+Para iniciar a aplicação, basta clonar o repositorio e ####caso tenha o DOCKER instalado, basta rodar o comando:
 
-Para concluir um pedido, será necessário estar autenticado.
-O user padrão para teste é:
+`docker-compose up`
+
+O sistema estará disponivel em:
+`http:localhost:4230`
+
+Será montando um json-server na porta 3001
+`https://localhost:3001`
+
+
+# Usuario do sistema
+
+Para concluir um pedido na aplicação será necessario estár logado na aplicação.
+
 User: bruno@gmail.com
 Senha: bruno01
-
-
-
-# GIT - Comando
-
-Checar repositorio:
-git remote -v
-
-Alterar repositorio:
-vim .git/config
-
