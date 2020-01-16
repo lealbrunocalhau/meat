@@ -20,5 +20,5 @@ Será montando um json-server na porta 3001
 
 Para concluir um pedido na aplicação será necessario estár logado na aplicação.
 
-User: bruno@gmail.com
-Senha: bruno01
+`User: bruno@gmail.com`
+`Senha: bruno01`
