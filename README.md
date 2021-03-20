@@ -22,3 +22,20 @@ Para concluir um pedido na aplicação será necessario estár logado na aplica�
 
 `User: bruno@gmail.com`
 `Senha: bruno01`
+
+
+# Infos Bruno
+
+A arquitetura basicamente tem 
+	-AppModule
+
+		Imports:
+		-SharedModule
+		=RouterModule(ROUTES) *{preloadingStrategy: PreloadAllmodules}
+	
+		Providers:
+		-LOCALE_ID **?
+		-ErrorHandler **?
+
+
+

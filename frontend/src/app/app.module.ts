@@ -1,17 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, LOCALE_ID, ErrorHandler} from '@angular/core';
+import { NgModule, LOCALE_ID, ErrorHandler } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms'
-import {LocationStrategy, HashLocationStrategy, registerLocaleData} from '@angular/common'
+import { registerLocaleData } from '@angular/common'
 import locatePt from '@angular/common/locales/pt'
 
 registerLocaleData(locatePt, 'pt')
-//modulo de animacao
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
-import {ApplicationErrorHandler} from './app.error-handler'
+//**Entender melhor como funciona
 
-import {ROUTES2} from './app.routes';
+//modulo de animacao
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { ApplicationErrorHandler } from './app.error-handler'
+
+import { ROUTES2 } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -27,7 +28,7 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 // import {ShoppingCartService} from './restaurant-detail/shopping-cart/shopping-cart.service';
 // import { OrderService } from './order/order.service';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
-import {SharedModule} from './shared/shared.module';
+import { SharedModule } from './shared/shared.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponent } from './security/login/login.component';
 import { UserDetailComponent } from './header/user-detail/user-detail.component'
@@ -61,10 +62,10 @@ import { UserDetailComponent } from './header/user-detail/user-detail.component'
     BrowserAnimationsModule,
     HttpClientModule,
     SharedModule.forRoot(),
-    RouterModule.forRoot(ROUTES2, {preloadingStrategy: PreloadAllModules})
+    RouterModule.forRoot(ROUTES2, { preloadingStrategy: PreloadAllModules })
   ],
-  providers: [{provide: LOCALE_ID, useValue: 'pt'},
-              {provide: ErrorHandler, useClass: ApplicationErrorHandler}],
+  providers: [{ provide: LOCALE_ID, useValue: 'pt' },
+  { provide: ErrorHandler, useClass: ApplicationErrorHandler }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
